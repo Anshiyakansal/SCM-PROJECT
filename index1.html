@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>5 Question Quiz</title>
+  <link rel="stylesheet" href="style1.css"/>
+</head>
+<body>
+    
+  <div class="quiz-container" id="quiz">
+    <div id="question">Loading...</div>
+    <div class="options" id="options"></div>
+    <button id="nextBtn">Next</button>
+
+    <div id="result" class="hidden">
+      <h2>Quiz Finished!</h2>
+      <p id="scoreText"></p>
+      <button onclick="restartQuiz()">Next quiz</button>
+    </div>
+    
+    <div id="moreQuizzes" class="more-quizzes hidden">
+        <h3>Try Another Quiz:</h3>
+        <button onclick="loadQuiz('general')">General</button>
+        <button onclick="loadQuiz('science')">Science</button>
+        <button onclick="loadQuiz('history')">History</button>
+      </div>
+  
+  <script src="script1.js"></script>
+</body>
+</html>

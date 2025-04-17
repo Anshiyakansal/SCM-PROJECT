@@ -1,0 +1,187 @@
+body {
+    background-color: #f0f4f8;
+    color: #7c2dc7;
+}
+
+.scrolling-banner {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: scroll-left 12s linear infinite;
+  }
+  
+  @keyframes scroll-left {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+  }
+  
+header {
+    background-color: #7c2dc7;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+marquee {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    background-color: #dcccea;
+    border-bottom: 1px solid #cccccc;
+}
+
+nav a {
+    color: #7c2dc7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #2c1b47;
+  }
+  
+
+main {
+    padding: 20px;
+}
+
+#home img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#login {
+    padding: 5px;
+    background-color: #dcccea;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* #login h2 {
+    color: #4e3269;
+} */
+
+#signup {
+    padding: 5px;
+    background-color: #dcccea;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* #signup h2 {
+    color: #4e3269;
+} */
+
+/* form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #ffffff;
+    border: 1px solid #4e3269;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #4e3269;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #4e3269;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #4e3269;
+    color: #ffffff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+} */
+
+#quizzes {
+    background-color: #dcccea;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-list {
+    background-color: #e3cafa;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #7c2dc7;
+}
+.quiz-list a{
+    color: #4e3269;
+}
+.quiz {
+    background-color: #e3cafa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #7c2dc7;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-top: 1px solid #29173a;
+}
+
+footer a {
+    color: #e3cafa;
+    text-decoration: none;
+}
+
+.quiz-list li a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 0;
+    background-color: #7c2dc7;
+    color: #fff;
+    border-radius: 8px;
+    transition: transform 0.2s ease, background-color 0.3s;
+  }
+  
+  .quiz-list li a:hover {
+    background-color: #2c1b47;
+    transform: translateY(-2px);
+  }
+  
+  .quiz-list h3 a {
+    color: rgb(45, 55, 235); /* Changes the link color */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Makes the link text bold */
+    text-decoration: underline;
+}
+.quiz-list h3 a:hover {
+    color: #2c1b47; /*Changes color on hover */
+     /* text-decoration: underline; Adds underline on hover */
+}
+
+#signup h3 a:hover{
+    color: #2c1b47; /*Changes color on hover */
+     /* text-decoration: underline; Adds underline on hover */
+}
+#login h3 a:hover{
+    color: #2c1b47; /*Changes color on hover */
+     /* text-decoration: underline; Adds underline on hover */
+}
+
+#contact a:hover{
+    color: #2c1b47; /*Changes color on hover */
+     /* text-decoration: underline; Adds underline on hover */
+}
