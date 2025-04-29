@@ -1,187 +1,165 @@
-body {
-    background-color: #f0f4f8;
-    color: #7c2dc7;
+/* Reset + base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f8ff, #e0c3fc);
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .scrolling-banner {
     overflow: hidden;
     white-space: nowrap;
     animation: scroll-left 12s linear infinite;
-  }
-  
-  @keyframes scroll-left {
+    font-size: 1rem;
+}
+
+@keyframes scroll-left {
     from { transform: translateX(100%); }
     to { transform: translateX(-100%); }
-  }
-  
-header {
-    background-color: #7c2dc7;
-    padding: 20px;
-    text-align: center;
-    color: white;
 }
 
-marquee {
-    font-size: 18px;
-    color: #FFFFFF;
-}
-
+/* Navigation */
 nav {
     text-align: center;
-    padding: 10px;
-    background-color: #dcccea;
-    border-bottom: 1px solid #cccccc;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
-    color: #7c2dc7;
-    text-decoration: none;
+    color: #6a11cb;
     font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    text-decoration: underline;
-    color: #2c1b47;
-  }
-  
+    color: #2575fc;
+}
 
+/* Main */
 main {
     padding: 20px;
 }
 
-#home img {
-    width: 100%;
-    border-radius: 8px;
+section {
+    margin-bottom: 30px;
 }
 
+#home,
+#quizzes,
+#signup,
 #login {
-    padding: 5px;
-    background-color: #dcccea;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
-
-/* #login h2 {
-    color: #4e3269;
-} */
-
-#signup {
-    padding: 5px;
-    background-color: #dcccea;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
-/* #signup h2 {
-    color: #4e3269;
-} */
-
-/* form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 1em;
-    background-color: #ffffff;
-    border: 1px solid #4e3269;
-    border-radius: 8px;
-}
-
-form label {
-    display: block;
-    margin-bottom: 0.5em;
-    color: #4e3269;
-}
-
-form input {
-    width: 100%;
-    padding: 0.5em;
-    border: 1px solid #4e3269;
-    border-radius: 4px;
-}
-
-form button {
-    background-color: #4e3269;
-    color: #ffffff;
-    border: none;
-    padding: 0.5em 1em;
-    border-radius: 4px;
-    cursor: pointer;
-} */
-
-#quizzes {
-    background-color: #dcccea;
+    background-color: white;
     padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
 }
 
+/* Hero Section */
+#home h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#home p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Quiz Section */
 .quiz-list {
-    background-color: #e3cafa;
+    background-color: #f5e9ff;
     padding: 20px;
-    border-radius: 40px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    color: #7c2dc7;
-}
-.quiz-list a{
-    color: #4e3269;
-}
-.quiz {
-    background-color: #e3cafa;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-footer {
-    background-color: #7c2dc7;
-    padding: 20px;
+    border-radius: 16px;
     text-align: center;
-    color: white;
-    border-top: 1px solid #29173a;
-}
-
-footer a {
-    color: #e3cafa;
-    text-decoration: none;
+    list-style-type: none;
 }
 
 .quiz-list li a {
     display: inline-block;
-    padding: 10px 20px;
-    margin: 5px 0;
-    background-color: #7c2dc7;
+    background: linear-gradient(to right, #2575fc, #6a11cb);
     color: #fff;
+    padding: 12px 24px;
     border-radius: 8px;
-    transition: transform 0.2s ease, background-color 0.3s;
-  }
-  
-  .quiz-list li a:hover {
-    background-color: #2c1b47;
+    margin: 5px;
+    text-decoration: none;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.quiz-list li a:hover {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
     transform: translateY(-2px);
-  }
-  
-  .quiz-list h3 a {
-    color: rgb(45, 55, 235); /* Changes the link color */
-    text-decoration: none; /* Removes underline */
-    font-weight: bold; /* Makes the link text bold */
+}
+
+.quiz-list h3 a {
+    color: #2575fc;
+    font-weight: bold;
     text-decoration: underline;
 }
+
 .quiz-list h3 a:hover {
-    color: #2c1b47; /*Changes color on hover */
-     /* text-decoration: underline; Adds underline on hover */
+    color: #6a11cb;
 }
 
-#signup h3 a:hover{
-    color: #2c1b47; /*Changes color on hover */
-     /* text-decoration: underline; Adds underline on hover */
-}
-#login h3 a:hover{
-    color: #2c1b47; /*Changes color on hover */
-     /* text-decoration: underline; Adds underline on hover */
+/* Action Buttons */
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
-#contact a:hover{
-    color: #2c1b47; /*Changes color on hover */
-     /* text-decoration: underline; Adds underline on hover */
+.action-card {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.primary-button {
+    padding: 12px 24px;
+    background: #2575fc;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.primary-button:hover {
+    background: #6a11cb;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #e0c3fc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
 }
